@@ -140,9 +140,9 @@ class _QtApi:
             raise pytest.UsageError(
                 "PyQt 6.0 is not supported by pytest-qt, use 6.1+ instead."
             )
-        elif self.QtCore.PYQT_VERSION < 0x050B00:  # 5.11.0
+        elif self.QtCore.PYQT_VERSION < 0x050902:  # 5.9.2
             raise pytest.UsageError(
-                "PyQt < 5.11 is not supported by pytest-qt, use 5.11+ instead."
+                "PyQt < 5.9.2 is not supported by pytest-qt, use 5.9.2+ instead."
             )
 
     def exec(self, obj, *args, **kwargs):
